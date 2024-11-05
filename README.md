@@ -62,12 +62,76 @@ of the DAX epressions used in POWER BI during my analysis.
       ```Excel
       =COUNTIF(D:D,"standard")
       ```
-   5.Premium subscription type
+   5. Premium subscription type
      ```Excel
      =COUNTIF(D:D,"premium")
      ```
     
 2. SQL;
- ```SQL
+    1. Customers who cancelled within 6 months
+     ```SQL
+     SELECT CUSTOMERNAME
+     FROM[dbo].[LITA Capstone Dataset 2]
+     WHERE CANCELED =1
+     AND DATEDIFF(MONTH,SUBSCRIPTIONSTART,SUBSCRIPTIONEND)<=6
+     ```
+    2. total number of customers from each region
+    ```SQL
+    SELECT REGION,COUNT(CustomerID) AS NUMBEROFCUSTOMERS
+    FROM[dbo].[LITA Capstone Dataset 2]
+     GROUP BY REGION
+    ```
+   3. Most popular subscripption type by the number of customers
+    ```SQL
+   SELECT TOP(1) SUBSCRIPTIONTYPE,COUNT(CUSTOMERID)AS MOSTPOPULAR
+   FROM [dbo].[LITA Capstone Dataset 2]
+   GROUP BY SUBSCRIPTIONTYPE
+   ORDER BY MOSTPOPULAR DESC
+   ```
+   4. Average subscription duration for all customers
+     ```SQL
+    SELECT AVG(DATEDIFF(DAY,SUBSCRIPTIONSTART,SUBSCRIPTIONEND))
+    AS AVERAGESUBSCRIPTIONDURATION
+    FROM [dbo].[LITA Capstone Dataset 2]
+   ```
+   5. customers with subscription longer than 12 months
+     ```SQL
+     SELECT CUSTOMERNAME
+     FROM[dbo].[LITA Capstone Dataset 2]
+     WHERE DATEDIFF(MONTH,SUBSCRIPTIONSTART,SUBSCRIPTIONEND)>12
+     ```
+   6. total revenue by subscription type
+    ```SQL
+    SELECT SUBSCRIPTIONTYPE,SUM(REVENUE)
+    AS TOTALREVENUE FROM[dbo].[LITA Capstone Dataset 2]
+    GROUP BY SubscriptionType
+    ```
+    7. top 3 regions by subscriptions cancallations
+      ```SQL
+     SELECT TOP 3 Region,
+     count (CUSTOMERID) AS TOTALCANCELED
+     FROM [dbo].[LITA Capstone Dataset 2]
+     WHERE CANCELED=1
+     GROUP BY REGION
+     ORDER BY TOTALCANCELED DESC
+     ```
+    8. total number of active and cancelled subscriptions
+    ```SQL
+    SELECT 
+    SUM(CASE WHEN CANCELED=0
+    THEN 1 ELSE 0 END)
+    AS ACTIVESUBSCRIPTIONS,
+    SUM(CASE WHEN CANCELED=1
+    THEN 1 ELSE 0 END)
+    AS CANCELEDSUBSCRIPTIONS
+    FROM[dbo].[LITA Capstone Dataset 2]
+  ```
+
+      
+
+
+     
+
+
 
    
