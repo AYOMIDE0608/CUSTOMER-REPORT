@@ -125,7 +125,10 @@ of the DAX epressions used in POWER BI during my analysis.
     THEN 1 ELSE 0 END)
     AS CANCELEDSUBSCRIPTIONS
     FROM[dbo].[LITA Capstone Dataset 2]
-  ```
+   ```
+
+
+### DATA VISUALIAATION
 
 
 
