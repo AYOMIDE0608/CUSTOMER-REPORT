@@ -4,6 +4,19 @@ An analysis was done on a data containing customer data for a subscription servi
 
 ### PROJECT TITLE: CUSTOMER SEGMENTATION REPORT
 
+[PROJECT OVERVIEW](#project-overview)
+
+[DATA SOURCES](#data-sources)
+
+[TOOLS USED](#tools-used)
+
+[DATA CLEANING AND PREPARATION](#data-cleaning-and-preparation)
+
+[EXPLORATORY DATA ANALYSIS](#exploratory-data-analysis)
+
+[ DATA ANALYSIS](#data-analysis)
+
+[DATA VISUALIZATION](#data-visualization)
 
 
 ### PROJECT OVERVIEW
@@ -129,7 +142,7 @@ of the DAX epressions used in POWER BI during my analysis.
    ```
 
 
-### DATA VISUALIAZATION
+### DATA VISUALIZATION
 
  ![Screenshot (17)](https://github.com/user-attachments/assets/0c093676-74b4-47bb-b159-ede19d70a6a0)
 
