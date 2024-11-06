@@ -5,6 +5,7 @@ An analysis was done on a data containing customer data for a subscription servi
 ### PROJECT TITLE: CUSTOMER SEGMENTATION REPORT
 
 
+
 ### PROJECT OVERVIEW
 This Data Analysis project aims to analyze customer data for a subscription service  for three years, by eploring this data set,I was able to identify 
 segments and trends, understand customer behavior, track subscription types, and identify key trends in cancellations and renewals,
@@ -128,7 +129,30 @@ of the DAX epressions used in POWER BI during my analysis.
    ```
 
 
-### DATA VISUALIAATION
+### DATA VISUALIAZATION
+
+ ![Screenshot (17)](https://github.com/user-attachments/assets/0c093676-74b4-47bb-b159-ede19d70a6a0)
+
+
+ ![Screenshot (18)](https://github.com/user-attachments/assets/31434e53-4c0c-42e0-a8c8-95384866d7ed)
+
+
+ ![Screenshot (19)](https://github.com/user-attachments/assets/f9701cf7-4213-45fa-8404-5d5a24f61bff)
+
+
+ ![Screenshot (20)](https://github.com/user-attachments/assets/df9fb6cf-b6cc-455f-968a-8277d1156a9f)
+
+
+ ![Screenshot (21)](https://github.com/user-attachments/assets/698d5fc9-ee3d-4dfc-bbd2-53324e725298)
+
+
+ ![Screenshot (22)](https://github.com/user-attachments/assets/9fa403a2-b900-449a-95c2-6ccebd2411b3)
+
+
+
+
+
+
 
 
 
